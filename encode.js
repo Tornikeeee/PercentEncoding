@@ -12,10 +12,14 @@ function encode() {
                 
                 return 0;
             }
+
+            if (typeof prop == 'object') {
+                
+            }
         }
         
-        var result = percentEncoding(property);
-        console.log(property);
+        var result = percentEncoding(prop);
+        console.log(prop);
         console.log(result);
 
 
