@@ -25,7 +25,7 @@ function encode() {
 
                 }
                 for (var i = 0; i < masiv1.length; i++) {
-                    masivmerg += mas1iv[i] + "=" + masiv2[i];
+                    masivmerg += masiv1[i] + "=" + masiv2[i];
                     masivmerg += "&";
                 }
                 masivmerg = masivmerg.substring(0, masivmerg.length - 1);
@@ -44,11 +44,28 @@ function encode() {
 
 
 
+    function decode() {
++
++    URLEncoder = {
 
+        if (Array.isArray(prop)) {
++                var masiv = [];
++                for (var i = 0; i < prop.length; i++) {
++                    var result = decodeURIComponent(prop[i]);
++                    masiv.push(result);
++                }
++                console.log(prop);
++                console.log(masiv);
++                return 0;
++
++            }
++
++            var result = decodeURIComponent(prop);
++            console.log(prop);
++            console.log(result);
 
+    
 
-
-
-
+    }
     }
 }
