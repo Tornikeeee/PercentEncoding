@@ -1,5 +1,6 @@
 function encode() {
     URLEncoder = {
+        
         encode: function (prop) {
 
             if (Array.isArray(prop)) {
@@ -12,7 +13,10 @@ function encode() {
                 return 0;
             }
         }
-    
+        
+        var result = percentEncoding(property);
+        console.log(property);
+        console.log(result);
 
 
 
